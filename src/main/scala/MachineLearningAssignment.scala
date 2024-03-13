@@ -136,7 +136,7 @@ object MachineLearningAssignment {
     // Evaluate model performance on test data
     val result = testPredictions.select("PassengerId", "prediction")
     result.coalesce(1).
-      write.option("header", "true").
+      write.option("header", "true").mode("overwrite").
       csv("src/main/resources/result")
 
     spark.stop()

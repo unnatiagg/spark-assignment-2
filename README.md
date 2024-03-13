@@ -1,0 +1,1 @@
+To Run this project. simply run the submit-spark-assignment-1.sh
